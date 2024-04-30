@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Basic HTML</title>
-</head>
-<body>  
+  <head>
+    <title>Basic HTML</title>
+  </head>
+  <body>
+    <a href="anchor.html">anchor</a>
     <a href="iframe.html">iFrame</a>
-</body>
+    <a href="deeplink.html">deeplink</a>
+    <a href="intent.html">intent</a>
+    <a href="native.html">native</a>
+
+    <input type="text" id="url" name="url" />
+
+    <script>
+      document
+        .getElementById("url")
+        .addEventListener("keydown", function search(e) {
+          if (e.keyCode == 13) {
+            location.href = e.target.value;
+          }
+        });
+    </script>
+  </body>
 </html>

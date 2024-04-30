@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Basic HTML with Iframe</title>
-</head>
-<body>
-  <h1>Example HTML with Iframe</h1>
-  
-  <iframe src="./deeplink.html"></iframe>
-</body>
+  <head>
+    <title>Basic HTML with Iframe</title>
+  </head>
+  <body>
+    <h1>Example HTML with Iframe</h1>
+    <script>
+      const iframe = document.createElement("iframe");
+      iframe.id = "shopee_call_app";
+      iframe.style.cssText = "display:none;border:0;width:0;height:0;";
+      iframe.src = "shopeemy://home";
+
+      document.body.appendChild(iframe);
+    </script>
+  </body>
 </html>

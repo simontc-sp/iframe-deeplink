@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML with Iframe</title>
+  </head>
+  <body>
+    <h1>Example HTML with Anchor</h1>
+    <script>
+      const tagA = document.createElement("a");
+      tagA.setAttribute("href", "shopeemy://home");
+
+      tagA.setAttribute("target", "_blank");
+
+      tagA.style.display = "none";
+
+      document.body.appendChild(tagA);
+      tagA.click();
+    </script>
+  </body>
+</html>
